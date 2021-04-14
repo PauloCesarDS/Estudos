@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<locale.h>
+
+int main()
+{setlocale(LC_ALL, "Portuguese");
+
+int pc, op;
+
+printf("\nFaça um algoritmo que calcule e exiba o valor do desconto e o valor a ser pago pelo cliente, o desconto deverá ser calculado sobre o valor do veículo de acordo com  o  combustível álcool 25 porcento, gasolina 21 porcento ou diesel 14 porcento: \n\n");
+
+printf("\nDigite o valor do veículo abaixo:\n\n");
+scanf("%d",&pc);
+
+printf("\nDigite para sua categoria:\n \n1- carro a álcool.\n \n2- carro a gasolina.\n \n3- carro a diesel.\n\n");
+scanf("%d",&op);
+
+
+switch(op)
+	{	case 1: printf("\n\nO valor do desconto é: $%d \n", pc*25/100);
+				printf("\n\nO valor a ser pago é: $%d \n", pc-(pc*25)/100);
+	break;
+		case 2: printf("\n\nO valor do desconto é: $%d \n", (pc*21)/100);
+				printf("\n\nO valor a ser pago é: $%d  \n", pc-(pc*21)/100);
+	break;	
+		case 3: printf("\n\nO valor do desconto é: $%d \n", (pc*14)/100);
+				printf("\n\nO valor a ser pago é: $%d \n", pc-(pc*14)/100);
+	break;	
+default: printf("\nOpção inválida!!!\n");
+}
+}
