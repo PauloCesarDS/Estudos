@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+main()
+{
+float nota1, nota2, nota3, media;
+char nome[30];
+
+while (media<= 100)
+{
+	printf("\n*****Media com estrutura de repeticao*****\n");
+	printf("\n Digite seu nome: \n\n");
+	scanf(" %s", &nome);
+	
+	printf("\n Ola %s, digite sua 1 nota abaixo: \n\n",nome);
+	scanf(" %f", &nota1);
+	
+	printf("\n Digite sua 2 nota: \n\n");
+	scanf(" %f", &nota2);
+	
+	printf("\n Agora digite sua 3 nota: \n\n");
+	scanf(" %f", &nota3);
+	
+	media = (nota1 + nota2+ nota3)/3;
+	
+	if (media>= 7)
+	{
+		printf("\n\nParabens %s, voce passou direto!\n",nome);
+	}
+	else if (media<= 5)
+	{
+		printf("\n\nInfelizmente voce reprovou %s.\n",nome);	
+	}	
+	else 
+	{
+		printf("\n\nVoce esta em recuperacao %s, corre que ainda da tempo!!\n",nome);
+	}
+		printf("\n///////////////////////////////////////////////////////\n");
+}
+}
