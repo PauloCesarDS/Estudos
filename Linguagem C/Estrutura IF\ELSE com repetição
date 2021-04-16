@@ -1,11 +1,11 @@
 #include<stdio.h>
-
 main()
 {
+
 float nota1, nota2, nota3, media;
 char nome[30];
 
-while (media<= 100)
+while (media<= 50)
 {
 	printf("\n*****Media com estrutura de repeticao*****\n");
 	printf("\n Digite seu nome: \n\n");
