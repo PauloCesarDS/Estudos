@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+//CRIANDO VARIAVEL DO TIPO STRUCT
+
+struct cadastro{
+		char nome[30];
+		int idade;
+		char dNascimento[30];
+		char email[40];
+};
+
+int main()
+{	
+
+// declara variavel do tipo *struct* cadastro
+
+struct cadastro pessoa1;
+
+//coletando dados do usuario *pessoa1*
+	
+  printf("\nDigite seu nome: \n");
+	scanf("%s",&pessoa1.nome);
+
+	printf("\nDigite sua idade: \n");
+	scanf("%d",&pessoa1.idade);
+
+	printf("\nDigite sua data de nascimento: \n");
+	scanf("%s",&pessoa1.dNascimento);
+	
+	printf("\nDigite seu e-mail: \n");
+	scanf("%s",&pessoa1.email);
+
+//exibindo na tela *pessoa1*
+
+  printf("\n**********CADASTRO CLIENTE**********\n\n");
+	printf("\nNome = %s\n",pessoa1.nome);
+	printf("\nIdade = %d\n",pessoa1.idade);
+	printf("\nData de Nascimento = %s\n",pessoa1.dNascimento);
+	printf("\nE-mail = %s\n",pessoa1.email);
+  
+  }
