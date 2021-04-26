@@ -8,9 +8,9 @@ main()
 	printf("Ola digite seu salario/renda:\n");
 	scanf("%f", &salario);
 	
-	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n");
+	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n\n*PARA ENCERRAR DIGITE 0 *\n");
 	
-	printf("\nDigite o valor da divida/fatura:    *para encerrar digite 0 *\n");
+	printf("\nDigite o valor da divida/fatura:\n");
 	scanf("%f", &dividas);
 	
 	while(dividas != 0){
@@ -18,12 +18,12 @@ main()
 		total = total + dividas;
 		contador ++;
 		
-		printf("\nDigite o valor da divida/fatura: *para encerrar digite 0 *\n");
+		printf("\nDigite o valor da divida/fatura:\n");
 		scanf("%f", &dividas);
 		
 	}
 	
 	dividas = total;
 	
-	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***", salario, dividas, salario - dividas );
+	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***\n", salario, dividas, salario - dividas );
 }
