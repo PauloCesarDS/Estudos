@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+main()
+{
+	float salario, dividas, sobra, total;
+	int contador;
+	
+	printf("Ola digite seu salario/renda:\n");
+	scanf("%f", &salario);
+	
+	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n");
+	
+	printf("\nDigite o valor da divida/fatura:    *para encerrar digite 0 *\n");
+	scanf("%f", &dividas);
+	
+	while(dividas != 0){
+		
+		total = total + dividas;
+		contador ++;
+		
+		printf("\nDigite o valor da divida/fatura: *para encerrar digite 0 *\n");
+		scanf("%f", &dividas);
+		
+	}
+	
+	dividas = total;
+	
+	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***", salario, dividas, salario - dividas );
+}
