@@ -11,15 +11,17 @@ main()
 	system("cls");
 	
 	//laco for para controle de loop
-	for(i=1; i <=contador; i++)
+	for(i =1; i <=contador; i++)
 	{
-		printf("\nEntre numero:");
+		printf("\nDigite numero:");
 		scanf("%d", &num);
 		
 		system("cls");
 		//operador ternario para verdadeiro ou falso
-		printf((num%2==0)? "\nValor -> PAR\n" : "\nValor -> IMPAR\n");
+		printf((num%2==0)? "\nResultado --> PAR\n" : "\nResultado --> IMPAR\n");
 	}
+	system("pause");
 	system("cls");
+	
 	printf("\nPrograma Finalizado.");
 }
