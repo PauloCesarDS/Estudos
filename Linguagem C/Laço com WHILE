@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 main()
 {
@@ -7,6 +8,7 @@ main()
 	
 	printf("Ola digite seu salario/renda:\n");
 	scanf("%f", &salario);
+	system("cls");
 	
 	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n\n*PARA ENCERRAR DIGITE 0 *\n");
 	
@@ -25,5 +27,6 @@ main()
 	
 	dividas = total;
 	
+	system("cls");
 	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***\n", salario, dividas, salario - dividas );
 }
