@@ -5,21 +5,21 @@ main()
 {			//Verifique se eh par ou impar:
  int i, num, contador;
 			
-			//lendo quantas vezes ira rodar
+			//lendo quantas vezes ira rodar..
 	printf("Ola, digite quantos numeros quer verificar:\n");
 	scanf("%d", &contador);
 	system("cls");
 	
-	//laco for para controle de loop
-	for(i =1; i <=contador; i++)
-	{
-		printf("\nDigite numero:");
-		scanf("%d", &num);
+			//laco for para controle de loop..
+   for(i =1; i <=contador; i++)
+{
+	printf("\nDigite numero:");
+	scanf("%d", &num);
 		
-		system("cls");
-		//operador ternario para verdadeiro ou falso
-		printf((num%2==0)? "\nResultado --> PAR\n" : "\nResultado --> IMPAR\n");
-	}
+	system("cls");
+			//operador ternario para verdadeiro ou falso..
+	printf((num%2==0)? "\nResultado --> PAR\n" : "\nResultado --> IMPAR\n");
+}
 	system("pause");
 	system("cls");
 	
