@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+main()
+{			//Verifique se eh par ou impar:
+ int i, num, contador;
+			
+			//lendo quantas vezes ira rodar..
+	printf("Ola, digite quantos numeros quer verificar:\n");
+	scanf("%d", &contador);
+	
+  	//laco for para controle de loop..
+	for(i=1; i <=contador; i++)
+	{
+		printf("\n******************\n");
+		printf("Entre numero:\n");
+		scanf("%d", &num);
+		
+		//operador ternario para verdadeiro ou falso..
+		printf((num%2==0)? "\nPAR" : "\nIMPAR");
+	}
+}
