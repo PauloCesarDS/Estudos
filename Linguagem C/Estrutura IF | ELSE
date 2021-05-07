@@ -12,13 +12,13 @@ char nome[20];
 	scanf(" %s", &nome);
 	system("cls");
 	
-	printf("\nOla %s, digite sua 1 nota abaixo: \n\n",nome);
+	printf("\nOla %s, digite nota 1 abaixo: \n\n",nome);
 	scanf(" %f", &nota1);
 	
-	printf("\nDigite sua 2 nota: \n\n");
+	printf("\nDigite nota 2: \n\n");
 	scanf(" %f", &nota2);
 	
-	printf("\nAgora digite sua 3 nota: \n\n");
+	printf("\nDigite nota 3: \n\n");
 	scanf(" %f", &nota3);
 	
 	media = (nota1 + nota2+ nota3)/3;
