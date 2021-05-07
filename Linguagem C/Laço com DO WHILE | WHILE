@@ -14,7 +14,7 @@ main()
 	scanf("%f", &salario);
 	system("cls");
 	
-	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n\n*PARA ENCERRAR DIGITE (0)*\n");
+	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n\n*DIGITE (0) AO FINAL PARA CALCULAR*\n");
 	
 	printf("\nDigite o valor da divida/fatura:\n");
 	scanf("%f", &dividas);
