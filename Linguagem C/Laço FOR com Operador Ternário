@@ -6,7 +6,8 @@ main()
  int i, num, contador;
 			
 			//lendo quantas vezes ira rodar..
-	printf("Ola, digite quantos numeros quer verificar:\n");
+	printf("***Descubra se valores sao PAR ou IMPAR***\n");		
+	printf("\nOla, digite quantos numeros quer verificar ?:\n");
 	scanf("%d", &contador);
 	system("cls");
 	
@@ -16,9 +17,8 @@ main()
 	printf("\nDigite numero:");
 	scanf("%d", &num);
 		
-	system("cls");
 			//operador ternario para verdadeiro ou falso..
-	printf((num%2==0)? "\nResultado --> PAR\n" : "\nResultado --> IMPAR\n");
+	printf((num%2==0)? "\n---> PAR\n" : "\n---> IMPAR\n");
 }
 	system("pause");
 	system("cls");
