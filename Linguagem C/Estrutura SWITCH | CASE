@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<locale.h>
 
 main()
@@ -11,29 +12,26 @@ float pcompra;
     /* Algoritmo que calcula e exibe o valor do desconto e o valor a ser pago pelo cliente,
 	 o desconto deverá ser calculado sobre o valor do veículo de acordo com  o  combustível álcool 25%,
 	  gasolina 21% ou diesel 14%.*/
-
+	
+	printf("***VEJA O VALOR DO SEU DESCONTO***\n");
 	printf("\nDigite o valor do veículo abaixo:\n\n");
 	scanf("%f",&pcompra);
 
-	printf("\nDigite para sua categoria:\n \n 1 para Carro a Álcool\n \n 2 para Carro a Gasolina\n \n 3 para Carro a Diesel\n\n");
+	printf("\nDigite para sua categoria:\n \n1--> Carro a Álcool\n \n2--> Carro a Gasolina\n \n3--> Carro a Diesel\n\n");
 	scanf("%d",&op);
-
-	printf("\n ****/////////////////////////////////////////////**** \n");
+	system("cls");
 
 switch(op)
 {		
-		case 1: printf("\n\n O valor do desconto é: $%.2f \n", pcompra*25/100);
-			printf("\n\n O valor a ser pago é: $%.2f \n", pcompra-(pcompra*25)/100);
+		case 1: printf("\n\n** VALOR DO VEÍCULO: $%.2f ** VALOR DO DESCONTO: $%.2f ** VALOR A SER PAGO: $%.2f **", pcompra, pcompra*25/100, pcompra-(pcompra*25)/100);
 			break;
 			
-		case 2: printf("\n\n O valor do desconto é: $%.2f \n", (pcompra*21)/100);
-			printf("\n\n O valor a ser pago é: $%.2f  \n", pcompra-(pcompra*21)/100);
+		case 2: printf("\n\n** VALOR DO VEÍCULO: $%.2f ** VALOR DO DESCONTO: $%.2f ** VALOR A SER PAGO: $%.2f **", pcompra, pcompra*21/100, pcompra-(pcompra*21)/100);
 			break;	
 			
-		case 3: printf("\n\n O valor do desconto é: $%.2f \n", (pcompra*14)/100);
-			printf("\n\n O valor a ser pago é: $%.2f \n", pcompra-(pcompra*14)/100);
+		case 3: printf("\n\n** VALOR DO VEÍCULO: $%.2f ** VALOR DO DESCONTO: $%.2f ** VALOR A SER PAGO: $%.2f **", pcompra, pcompra*14/100, pcompra-(pcompra*14)/100);
 			break;	
 			
-default: printf("\n Opcão inválida!\n");
+	default: printf("\n Opcão inválida!\n");
 }
 }
