@@ -37,5 +37,4 @@ struct cadastro pessoa1;
 	printf("\nIdade = %d\n",pessoa1.idade);
 	printf("\nData de Nascimento = %s\n",pessoa1.dNascimento);
 	printf("\nE-mail = %s\n",pessoa1.email);
-  
-  }
+}
