@@ -3,7 +3,7 @@
 
 main()
 {
-	float salario, dividas, sobra, total;
+	float salario, dividas, total;
 	int contador, retorno;
 	
 	do{
@@ -17,7 +17,7 @@ main()
 	printf("\n***Vamos la chegou a hora de voce informar sua divida ou dividas***\n\n*DIGITE (0) AO FINAL PARA CALCULAR*\n");
 	
 	printf("\nDigite o valor da divida/fatura:\n");
-	scanf("%f", &dividas);
+	scanf("%f", &dividas); 
 
 	while(dividas != 0)
 		{
@@ -25,15 +25,15 @@ main()
 		contador ++;
 		
 		printf("\nDigite o valor da divida/fatura:\n");
-		scanf("%f", &dividas);
+		scanf("%f", &dividas); 
 		}
 	
 	dividas = total;
 	
 	system("cls");
-	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***\n", salario, dividas, salario - dividas );
+	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SALDO: $%.2f ***\n", salario, dividas, salario - dividas );
 
-	printf("\nPara uma nova consulta digite (1)\nPara finalizar o programa digite(0)\n");
+	printf("\nPara uma nova consulta digite (1)\nPara finalizar o programa digite (0)\n");
 	scanf("%d", &retorno);
 		
 	}while(retorno !=0);
