@@ -18,16 +18,15 @@ main()
 	
 	printf("\nDigite o valor da divida/fatura:\n");
 	scanf("%f", &dividas);
-	
-	while(dividas != 0){
-		
+
+	while(dividas != 0)
+		{
 		total = total + dividas;
 		contador ++;
 		
 		printf("\nDigite o valor da divida/fatura:\n");
 		scanf("%f", &dividas);
-		
-	}
+		}
 	
 	dividas = total;
 	
