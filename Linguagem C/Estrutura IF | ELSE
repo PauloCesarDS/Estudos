@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 main()
 {
@@ -6,20 +7,22 @@ main()
 float nota1, nota2, nota3, media;
 char nome[20];
 
-	printf("\n******Media******\n");
-	printf("\n Digite seu nome: \n\n");
+	printf("******CALCULO DE MEDIA******\n");
+	printf("\nDigite seu nome: \n\n");
 	scanf(" %s", &nome);
+	system("cls");
 	
-	printf("\n Ola %s, digite sua 1 nota abaixo: \n\n",nome);
+	printf("\nOla %s, digite sua 1 nota abaixo: \n\n",nome);
 	scanf(" %f", &nota1);
 	
-	printf("\n Digite sua 2 nota: \n\n");
+	printf("\nDigite sua 2 nota: \n\n");
 	scanf(" %f", &nota2);
 	
-	printf("\n Agora digite sua 3 nota: \n\n");
+	printf("\nAgora digite sua 3 nota: \n\n");
 	scanf(" %f", &nota3);
 	
 	media = (nota1 + nota2+ nota3)/3;
+	system("cls");
 	
 	if (media>= 7)
 	{
