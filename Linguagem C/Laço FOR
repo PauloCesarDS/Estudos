@@ -6,7 +6,7 @@ main()
 
 int i, num, maior;
 	
-	printf("***Verifique o maior valor dentre (5) os digitados***\n");
+	printf("***Verifique o maior valor entre os (5) digitados***\n");
 	
 	// laco para controle de loop
 	for(i =1; i <=5; i++)
