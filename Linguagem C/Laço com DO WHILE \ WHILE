@@ -4,7 +4,11 @@
 main()
 {
 	float salario, dividas, sobra, total;
-	int contador;
+	int contador, retorno;
+	
+	do{
+		
+	system("cls");
 	
 	printf("Ola digite seu salario/renda:\n");
 	scanf("%f", &salario);
@@ -29,4 +33,9 @@ main()
 	
 	system("cls");
 	printf("\n***SALARIO: $%.2f *** DIVIDA: $%.2f *** SOBRA: $%.2f ***\n", salario, dividas, salario - dividas );
+
+	printf("\nPara uma nova consulta digite (1)\nPara finalizar o programa digite(0)\n");
+	scanf("%d", &retorno);
+		
+	}while(retorno !=0);
 }
