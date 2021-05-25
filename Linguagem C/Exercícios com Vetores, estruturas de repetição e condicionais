@@ -1,0 +1,112 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#define TAM1 20
+#define TAM2 10
+#define TAM3 6
+#define TAM4 10
+
+	//1° Dada uma sequência numérica de 20 elementos armazenados num vetor,
+	// determine o índice do maior elemento do conjunto, elementos distintos:
+/*
+main(){	setlocale(LC_ALL,"");
+
+	int i, posicao, maior, vetor[TAM1] = { 1, 33, 60, 22, 77, 66, 19, 5, 9, 103, 205,
+										                      900, 157, 3, 89, 48, 99, 302, 90, 451 } ;
+										
+	for(i=0; i<TAM1; i++)
+	{		
+			if(vetor[i]>maior)
+				{
+					maior = vetor[i];
+					posicao = i;
+				}
+	}
+		printf("\nO maior valor digitado está na posição : [%d]\n", posicao);
+}*/
+
+
+	//2° Elabore um algoritimo que leia um vetor de 10 posições e imprima
+	// quantos números são positivos e quantos são impar:
+/*	
+main(){ setlocale(LC_ALL,"");
+
+	int i, vetor[TAM2], positivo =0, impar =0;
+	
+	for(i=0; i<TAM2; i++)
+	{
+		printf("Digite o %d número:", i+1);
+		scanf("%d", &vetor[i]);
+	}
+		for(i=0; i<TAM2; i++)
+	{
+		if(vetor[i]>=0)
+		{
+			positivo+= 1;
+		}
+			if(vetor[i]%2==1)
+			{
+				impar+= 1;
+			}
+	}
+		printf("\nForam digitados %d números sendo %d positivos e %d impares.", i, positivo, impar);
+}
+*/
+
+
+	//3° Elabore um algoritimo que leia um vetor de 6 posições e mostre a soma,
+	// a média e a quantidade de números menores que 10:
+/*
+main(){	setlocale(LC_ALL,"");
+
+	int i, soma=0, vmedia=0, media=0, menor=0, vetor[TAM3];
+	
+	for(i=0; i<TAM3; i++)
+	{
+		printf("Digite o %d número:", i+1);
+		scanf("%d", &vetor[i]);
+				
+		if(vetor[i]<10)
+		{
+			menor+=1;
+		}
+		
+		soma+= vetor[i];
+		vmedia+= vetor[i];		
+	}
+			
+		media = vmedia / i;
+		
+		printf("\n*** Soma dos valores digitados: [%d] ***\n*** Média dos valores digitados: [%d] ***\n*** Quantidade de valores menores que 10: [%d] ***", soma, media, menor);
+}
+*/
+	
+  
+	//4° Elabore um algoritimo que armazene 10 valores inteiros em um vetor.
+	// Depois solicite ao usuário para digitar um valor e procure no vetor esse valor.
+	// Se encontrar informar em qual casa esse número está, se não encontrar
+	// informar "não encontrado":
+
+main(){ setlocale(LC_ALL,"");
+
+	int i, usuario, posicao, vetor[TAM4] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	
+		printf("Digite abaixo um número para verificar:\n");
+		scanf("%d", &usuario);
+	
+	for(i=0; i<TAM4; i++)
+	{
+		if(usuario==vetor[i])
+		{
+			posicao = i;
+		}	
+	}		
+			if(usuario>0&&usuario<=TAM4)
+			{
+				printf("\nO valor digitado está na posição: [%d]\n", posicao);
+			}
+				else
+				{
+					printf("\nValor não encontrado.\n");
+				}
+}
