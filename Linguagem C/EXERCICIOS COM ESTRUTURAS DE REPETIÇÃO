@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+/*1° Faça um algoritmo que determine o maior entre N números.
+A  condição de parada é a entrada de um valor 0, ou seja,
+o algoritmo  deve ficar calculando o maior até que a entrada seja igual a 0  (ZERO).*/
+/*
+main()
+{
+	int i, num, maior;
+	
+	printf("***Verifique o maior valor entre os digitados***\n");
+		
+	// laco para controle de loop
+	while(num !=0)
+{
+	printf("*** PARA VERIFIACR O RESULTADO DIGITE (0) ***\n");
+	printf("\nDigite o numero:");
+	scanf("%d", &num);	
+	system("cls");	
+	
+	//comparacao e atribuicao
+	if(num >= maior)
+	{
+	maior = num;
+	}
+}
+	printf("O maior valor digitado foi: %d",maior);
+}
+*/
+
+/*2° Faça um algoritmo que imprima a tabuada de multiplicação de 1 a 10.*/
+/*
+int main()
+{
+    int i, contador, valor1;
+	
+	printf("\nATIVIDADE DE LOGICA| TABUADA:\n");
+	
+	for(valor1 =1; valor1<=10; valor1++) // laco para incremento ao primeiro numero, 
+	{									 // toda vez que o abaixo rodar 10 vezes
+		
+		contador =1; // para o contador reiniciar de 1 a 10 dinovo.
+		
+		printf("\n   TABUADA DO NUMERO: %d\n",valor1);
+		
+		for(i =1; i<=10; i++) //laco para fazer tabuada do (1)
+		{	
+		printf("\t%d x %d = %d\n", valor1, contador++, valor1 * contador);
+		}	
+	}
+}
+*/
+
+
+/*3° Faça um algoritmo que imprima a tabuada de multiplicação 
+entre 2 números que o usuário escolher.*/
+
+int main()
+{
+    int i, contador, valor1, giro=1;
+	
+	for(valor1 =1; giro<=2; valor1++) // laco para incremento ao primeiro numero, 
+	{									 // toda vez que o abaixo rodar 10 vezes
+		
+		giro++; //tinha esquecido desse incremento!
+		
+		printf("\nATIVIDADE DE LOGICA| TABUADA:\n DIGITE NUMERO ABAIXO:\n");
+		scanf("\t%d", &valor1);
+		
+		contador =1; // para o contador reiniciar de 1 a 10 dinovo.
+		
+		printf("\n   TABUADA DO %d NUMERO:\n",valor1);
+		
+		for(i =1; i<=10; i++) //laco para fazer tabuada do (1)
+		{	
+		printf("\n\t%d x %d = %d\n", valor1, contador++, valor1 * contador);
+		}	
+	}
+}
