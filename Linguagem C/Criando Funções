@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+main(){	setlocale(LC_ALL,"");
+
+	int resultado, num1, num2;
+	
+		printf("Digite dois números abaixo para divisao:\n");
+		scanf("%d%d", &num1, &num2);
+		
+			resultado = soma(num1, num2);
+		
+				printf("\nResultado:%d\n", resultado);
+		
+					 escrevaNaTela();		
+}
+
+soma(int v1, int v2){
+	
+		int rsoma;
+		
+		rsoma = v1 / v2;
+}
+
+escrevaNaTela(){
+	
+	printf("\nA mágica das funções *--*\n");
+}
