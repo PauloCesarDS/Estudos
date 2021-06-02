@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#define TAM 3
+
+struct cadastro{
+		
+		char nome[30];
+		int idade;
+		char cidade[15];
+};
+
+main(){	setlocale(LC_ALL,"");
+
+	int i;
+	struct cadastro pessoa[TAM];
+	
+	for(i=0; i<TAM; i++){
+		
+		printf("\n******* %d CADASTRO *******\n", i+1);
+		printf("Digite nome:\n");
+		scanf("%s", &pessoa[i].nome);
+		
+			printf("Digite idade:\n");
+			scanf("%d", &pessoa[i].idade);
+			
+				printf("Digite cidade:\n");
+				scanf("%s", &pessoa[i].cidade);
+	}
+system("cls");		for(i=0; i<TAM; i++){
+						
+						printf("\n*******cliente %d*******\n", i+1);
+		
+							printf("Nome %d: %s\n", i+1, pessoa[i].nome);
+		
+								printf("Idade %d: %d\n", i+1, pessoa[i].idade);
+					
+									printf("Cidade %d: %s\n", i+1, pessoa[i].cidade);				
+	}	
+}
