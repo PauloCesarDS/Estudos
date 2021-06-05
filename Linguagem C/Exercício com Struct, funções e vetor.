@@ -1,0 +1,139 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#define TAM 10
+
+
+  				// Aluno: Paulo César Costa Santos Filho
+  				
+  				// Dessa vez tava dificil.
+  	
+	//1°Elabore um programa em C que possua uma estrutura de aluno com (caracteres)nome,
+	//(inteiro)idade e  (caracter)sexo, sendo vetor de 10 posições (Criação de 10 alunos).
+	//Utilizando funções resolva as seguintes questões: 
+
+struct cadastro{
+		
+		char nome[50];
+		int idade;
+		char sexo[30];
+};
+	
+main(){	
+	
+	struct cadastro aluno[TAM]; // criando variavel do tipo Struct com array unidimensional
+	int i, maiorIdade =0, menorIdade =0, funcaod=0, maiorQue =0; 
+	
+	setlocale(LC_ALL,"");
+		
+		for(i=0; i<TAM; i++){
+		
+		printf("****** CADASTRO ALUNO %d° ********\n\n",i+1);
+		printf("Digite nome:");
+		fflush(stdin);
+		gets(aluno[i].nome);
+		
+			printf("Digite idade:");
+			scanf("%d", &aluno[i].idade);
+						
+				printf("Digite sexo:");
+				scanf("%s", &aluno[i].sexo);				
+					
+					printf("\n");
+					system("cls");					
+		}
+		system("cls");
+		
+		maiorIdade = funcao_A(aluno); // armazenando valores da função A
+		menorIdade = MENOR(aluno);	 //	 armazenando valores da função B
+		
+			printf("\n******** FUNÇÃO A ********\n");
+			printf("\nQuantidade de alunos com idade maior que 10: %d\n", maiorIdade);
+			
+				printf("\n******** FUNÇÃO B ********\n");											// inserindo a posição capturada da função B
+				printf("\nO Aluno cadastrado com a menor idade é: %s, IDADE: %d, SEXO %s.\n", aluno[menorIdade].nome, aluno[menorIdade].idade, aluno[menorIdade].sexo);
+				
+					printf("\n******** FUNÇÃO C ********\n");
+					funcao_C(aluno);
+					
+						printf("\n******** FUNÇÃO D ********\n");
+						printf("\nDigite um número para verificação da função 'D':\n");
+						scanf("%d", &funcaod);
+						maiorQue = funcao_D(aluno,funcaod);
+					
+							printf("\nQuantidade de alunos com idade maior que o valor '%d' digitado é: %d\n",funcaod, maiorQue);					
+}
+
+	//a) 	Crie uma função que mostre a quantidade de alunos existentes no 
+	//		vetor que as idades sejam maiores que 10(Utilizar return):
+	
+	//inserindo variaveis "ilustrativas" para a função
+	int funcao_A(struct cadastro a[]){
+	
+	int i, maior =0;
+	
+	for(i=0; i<TAM; i++){
+		
+		if(a[i].idade>10) // fazendo a varredura
+		{	
+			maior++;
+		}	
+	}	
+	 		return maior; // retornando o valor para a função
+}
+
+	//b) 	Crie uma função de nome MENOR que retorne o Aluno(nome, idade e sexo)
+	// 		com a menor idade existente no vetor (Utilizar return):
+	
+	int MENOR(struct cadastro b[]){
+
+	int i, j=0, menor =b[0].idade; // iniciando em 0 para inserção de valores,
+									// e captura de posicao.
+	for(i=0; i<TAM; i++){
+		
+		if(b[i].idade<=menor)
+		{	
+			menor = b[i].idade;
+			j = i;
+		}	
+	}	
+	 		return j;
+	} 
+
+	//c)	 Crie uma função que mostre os Alunos(nome, idade e sexo) com idades pares e impares existentes no vetor:
+
+	//funcao para impressão direto no main
+	void funcao_C(struct cadastro c[]){
+
+	int i;
+	
+	for(i=0; i<TAM; i++){
+		
+		if(c[i].idade%2==0)
+		{	
+			printf("\n[%d°] Aluno idade par: %s, IDADE: %d, SEXO: %s.\n",i+1, c[i].nome, c[i].idade, c[i].sexo);
+		}		
+			if(c[i].idade%2!=0)
+			{	
+				printf("\n[%d°] Aluno idade impar: %s, IDADE: %d, SEXO: %s.\n",i+1, c[i].nome, c[i].idade, c[i].sexo);
+			}	
+		}	
+	}
+	
+	//d) 	Crie uma função que receba um número inteiro vindo do main() e retorne 
+	// 		quantos Alunos(nome, idade e sexo) existentes no vetor tem idade maior
+	// 		que esse número (Utilizar return):
+	
+	int funcao_D(struct cadastro a[], int b){
+	
+	int i, maiorQue =0;
+	
+	for(i=0; i<TAM; i++){
+		
+		if(a[i].idade>b)
+		{	
+			maiorQue++;
+		}	
+	}	
+	 		return maiorQue;
+}
