@@ -4,9 +4,9 @@
 #define TAM 10
 
 
-  				// Aluno: Paulo César Costa Santos Filho
   				
-  				// Dessa vez tava dificil.
+  				
+  				
   	
 	//1°Elabore um programa em C que possua uma estrutura de aluno com (caracteres)nome,
 	//(inteiro)idade e  (caracter)sexo, sendo vetor de 10 posições (Criação de 10 alunos).
